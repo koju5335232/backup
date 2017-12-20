@@ -1,0 +1,29 @@
+/**
+ *
+ */
+
+/**
+ * @author internousdev
+ *
+ */
+public class Test {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO 自動生成されたメソッド・スタブ
+		Person taro = new Person();
+		taro.name="山田太郎";
+		taro.age=20;
+		System.out.println(taro.name);
+		System.out.println(taro.age);
+
+		Person yuki = new Person();
+		yuki.name="高寿紀孝";
+		yuki.age=25;
+		System.out.println(yuki.name);
+		System.out.println(yuki.age);
+	}
+
+}
