@@ -1,6 +1,16 @@
+/**
+ *
+ */
 
+/**
+ * @author internousdev
+ *
+ */
 public class Iphone {
 
+	/**
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		SmartPhone iphone = new SmartPhone();
 		iphone.play();
