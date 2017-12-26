@@ -1,11 +1,29 @@
 
 public class Main {
 	public static void main(String[] args){
-		Hero.setRandomMoney();
-		System.out.println(Hero.money);
-		Hero h1;
-		h1=new Hero();
-		h1.hp=100;
-		System.out.println(h1.money);
+		Hero h1=new Hero("a");
+
+		Hero h2=new Hero("b");
+
+		Hero h3=new Hero();
+
+		SuperHero sh=new SuperHero("d");
+
+		Wizard w=new Wizard();
+		w.name="c";
+		w.hp=50;
+
+		Matango m1=new Matango('A');
+
+
+		sh.run();
+		h1.run();
+		h2.run();
+		h3.run();
+		m1.attack(h1);
+		w.heal(h1);
+		System.out.println(h1.getHp());
+		m1.attack(h1);
+		System.out.println(h1.getHp());
 	}
 }

@@ -1,0 +1,29 @@
+
+public class Main {
+	public static void main(String[] args){
+		Hero h1=new Hero("a");
+
+		Hero h2=new Hero("b");
+
+		Hero h3=new Hero();
+
+		SuperHero sh=new SuperHero();
+
+		Wizard w=new Wizard();
+		w.name="c";
+		w.hp=50;
+
+		Matango m1=new Matango();
+		m1.hp=50;
+		m1.suffix='A';
+
+		Matango m2=new Matango();
+		m2.hp=48;
+		m2.suffix='B';
+
+		sh.run();
+		h1.run();
+		h2.run();
+		h3.run();
+	}
+}

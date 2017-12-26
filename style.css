@@ -9,21 +9,21 @@ header{
 .logo{
     float:left;
     width:200px;
-    color:white;
-    line-height:60px;
     padding-left:10px;
+    color:white;
     font-size:25px;
+    line-height:60px;
 }
 header ul{
     float:right;
-    line-height:40px;
+    line-height:60px;
 }
 header ul li{
     float:left;
     list-style:none;
-    font-size:15px;
     padding-right:20px;
     color:white;
+    font-size:15px;
 }
 main{
     clear:both;
@@ -31,7 +31,7 @@ main{
 .main-container{
     width:95%;
     margin:0 auto;
-    margin-top:70px;
+    margin-top:70px
 }
 .left{
     float:left;

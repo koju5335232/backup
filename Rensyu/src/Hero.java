@@ -1,14 +1,28 @@
 
 public class Hero {
-	String name;
-	int hp;
-	static int money;
-
-	void sleep(){
-		this.hp=100;
-		System.out.println(this.name+"は眠って回復した");
+	private String name;
+	private int hp;
+	public int getHp(){
+		return this.hp;
 	}
-	static void setRandomMoney(){
-		Hero.money=(int) (Math.random()*1000);
+	public void setHp(int hp){
+		this.hp=hp;
+	}
+	Hero(String name){
+		this.hp = 100;
+		this.name=name;
+	}
+	Hero(){
+		this("ダミー");
+	}
+
+	public void attack(Matango m){
+		System.out.println(this.name+"の攻撃");
+		m.hp-=5;
+		System.out.println("5ポイントのダメージを与えた");
+	}
+
+	public void run(){
+		System.out.println(this.name+"は逃げ出した");
 	}
 }
