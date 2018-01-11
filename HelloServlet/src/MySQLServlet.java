@@ -22,7 +22,7 @@ public class MySQLServlet extends HttpServlet {
 		request.setCharacterEncoding("UTF-8");
 		response.setContentType("text/html; charset=UTF-8");
 
-		PrintWriter out = response.getWriter();
+		PrintWriter out=response.getWriter();
 
 		out.println("<html>");
 		out.println("<head>");
@@ -41,16 +41,17 @@ public class MySQLServlet extends HttpServlet {
 
 			Statement stmt = conn.createStatement();
 			String sql = "SELECT * FROM test_table";
-			ResultSet rs =stmt.executeQuery(sql);
+			ResultSet rs = stmt.executeQuery(sql);
 
 			while(rs.next()){
 				int userId = rs.getInt("user_id");
-				String userName = rs.getString("user_name");
+				String userName=rs.getString("user_name");
 				String userPassword = rs.getString("password");
 				out.println("<p>");
-				out.println("ユーザーID:"+userId+"、ユーザー名:"+userName+"、パスワード:"+userPassword);
+				out.println("ユーザーID:"+userId+",ユーザー名:"+userName+",パスワード:"+userPassword);
 				out.println("</p>");
 			}
+
 			rs.close();
 			stmt.close();
 		} catch (ClassNotFoundException e){
@@ -59,7 +60,7 @@ public class MySQLServlet extends HttpServlet {
 			out.println("SQLException:"+e.getMessage());
 		} catch (Exception e){
 			out.println("Exception:"+e.getMessage());
-		}finally{
+		} finally{
 			try{
 				if(conn != null){
 					conn.close();
