@@ -44,6 +44,7 @@ public class LoginAction extends ActionSupport implements SessionAware{
 		return session;
 	}
 	public void setSession(Map<String,Object> session){
-		this.session = session;
+		this.session=session;
 	}
+
 }

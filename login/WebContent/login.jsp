@@ -1,10 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="utf-8"%>
-<%@ taglib prefix = "s" uri = "/struts-tags"%>
+    pageEncoding="UTF-8"%>
+<%@ taglib prefix = "s" uri = "/struts-tags" %>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
+<meta charset="UTF-8">
 <title>ログイン画面</title>
 </head>
 <body>
